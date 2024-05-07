@@ -63,6 +63,7 @@ Let's walk through the algorithm's execution with the full move tree, and show w
 Here is the function for scoring the game:
 
 # @player is the turn taking player
+```
 def score(game)
     if game.win?(@player)
         return 10
@@ -101,6 +102,7 @@ def minimax(game)
         return scores[min_score_index]
     end
 end
+```
 ## program
 ```py
 import time
